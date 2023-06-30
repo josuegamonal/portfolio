@@ -152,6 +152,11 @@ footer {
 	grid-column: 2/4;
 }
 
+.main-volver {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+
 .more {
 	margin-top: 2rem;
 }
@@ -180,6 +185,10 @@ footer {
 	grid-column: 4/5;
 }
 
+.selfie-movil {
+	display: none;
+}
+
 .skills {
 	display: inline-flex;
 	margin-top: 2rem;
@@ -203,7 +212,7 @@ footer {
 }
 
 .trabajos {
-	border: solid;
+	border: none;
 	margin: 3px;
 	display: grid;
 	justify-content: center;
@@ -303,7 +312,6 @@ footer {
 .h3-trabajos {
 	display: none; /* Hide the <h3> by default */
 	color: black;
-	padding: 2rem;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -324,3 +332,150 @@ footer {
 	height: 100%; /* La imagen ocupará el 100% de la altura del div */
 	object-fit: cover; /* Mantiene la relación de aspecto de la imagen y la ajusta al div */
   }
+
+
+
+  @media (max-width: 900px) {
+	* {
+		padding: 0px;
+		margin: 5px;
+	}
+	
+	.container {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.selfie {
+		display: none;
+	}
+
+	.selfie-movil {
+		display: flex;
+		width: 65%;
+	}
+	
+	
+	.enlaces {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.enlaces-contacto {
+		align-items: last baseline;
+		justify-content: left;
+		gap: 0.5rem;
+	}
+	
+	
+
+	h1 {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 2rem;
+		line-height: 1.7rem;
+	}
+	
+	h3 {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1rem;
+	}
+	
+	p {
+		font-family: 'Roboto Mono', monospace;
+		font-size: 0.8rem;
+		margin-top: 2rem;
+	}
+
+	.main-volver {
+		display: block;
+	}
+	
+
+	section {
+		margin-top: 2rem;
+	}
+
+  }
+
+
+  @media (max-width: 600px) {
+	* {
+		padding: 0px;
+		margin: 5px;
+	}
+	
+	.container {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.selfie {
+		display: none;
+	}
+
+	.selfie-movil {
+		display: block;
+	}
+	
+	
+	.enlaces {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.enlaces-contacto {
+		align-items: last baseline;
+		justify-content: left;
+		gap: 0.5rem;
+	}
+	
+	
+
+	h1 {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 2rem;
+		line-height: 1.7rem;
+	}
+	
+	h3 {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1rem;
+	}
+	
+	p {
+		font-family: 'Roboto Mono', monospace;
+		font-size: 0.8rem;
+		margin-top: 2rem;
+	}
+
+	.main-volver {
+		display: block;
+	}
+	
+
+	section {
+		margin-top: 2rem;
+	}
+	
+
+	#projects{
+		margin-top: 3rem;
+		width: 100%;
+		display: block;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+	#projects-pagina{
+		margin-top: 3rem;
+		width: 100%;
+		display: block;
+	}
+	
+		
+  }
+  
