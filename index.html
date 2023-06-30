@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Josue's Portfolio</title>
+	<meta name='robots' content='noindex,nofollow' />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navegacion">
+		<div class="container" id="navbar">
+			<div class="logo">
+				<h3>Josué Gamonal</h3>
+				<p class="subtitle">Portfolio</p>
+			</div>
+			<div class="enlaces">
+				<div class="contacto">
+					<p class="nav-contact">Home</p>
+				</div>
+				<div class="contacto">
+					<p class="nav-contact-pipe">|</p>
+				</div>
+				<div class="contacto">
+					<a href="mailto:josue.gamonal@gmail.com"><p class="nav-contact">Contacto</p></a>
+				</div>
+
+				<a href="https://www.linkedin.com/in/josue-gamonal-lopez/" target="_blank">
+					<div class="icon">
+					<img class="icon-svg" src="images/icons/linkedin.svg" alt="Linkedin">
+					</div>
+				</a>
+				<a href="https://github.com/josuegamonal" target="_blank">
+					<div class="icon">
+						<img class="icon-svg" src="images/icons/github.svg" alt="Github">
+					</div>
+				</a>
+			</div>
+			<div class="social">
+
+			</div>
+		</div>
+	</nav>
+
+
+	<section class="about-me">
+		<div class="container">
+			<div class="main-text">
+				<h1>Sed ut perspiciatis unde omnis iste</h1>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+				</p>
+				<div class="icon more" id="boton-mas">
+					<img class="icon-svg" src="images/icons/plus-circle-fill.svg" alt="Linkedin">
+				</div>
+			</div>
+			<div class="selfie">
+				<img src="images/selfie.png" alt="Selfie">
+				<!---<img src="botones.jpg" alt=""> --->
+			</div>
+		</div>
+	</section>
+
+	<section class="curriculum" id="curriculum-id">
+		<div class="container" id="experiencia">
+			<div class="experiencia">
+				<div class="skill-container">
+					<h3>Experiencia laboral</h3>
+					<ul>
+					<li>2021-2023 DIRECTOR DE ARTE | FRONT-END DEVELOPER en Rita Y Peter</li>
+					<li>2010-2021 DIRECTOR DE ARTE en AVON Cosmetics S.A.</li>
+					<li>2005-2010 DISEÑADOR INDUSTRIAL-GRÁFICO FREELANCE</li>
+					</ul>
+					<br>
+					<h3>Skills</h3>
+					<ul>
+						<li>trabajo 1</li>
+						<li>trabajo 2</li>
+						<li>trabajo 3</li>
+						</ul>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="portfolio">
+		<div class="container">
+			<div class="vacio"></div>
+			<div class="titulo-h3">
+				<h3>Portfolio</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="text-portfolio">
+				<p>qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+			</div>
+		</div>
+
+		<div class="container" id="projects">
+
+			<div class="trabajos trabajo-1" id="trab-1"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+		 		<img class="img-trabajos" src="images/ritaypeter/rita_peter_portatil.webp" alt="Rita y Peter">
+			 	<h3 class="h3-trabajos">Some Text</h3>
+			</div>
+
+			<div class="trabajos trabajo-2" id="trab-2"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+				<img class="img-trabajos" src="images/thermomix/banner_thermomix.webp" alt="Campaña Vive Thermomix">
+				<h3 class="h3-trabajos">Campaña Vive Thermomix</h3>
+			</div>
+
+			<div class="trabajos trabajo-3" id="trab-3"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+				<img class="img-trabajos" src="botones.jpg" alt="Beteling">
+				<h3 class="h3-trabajos">Catálogos <br>Beteling</h3>
+			</div>
+
+			<div class="trabajos trabajo-4" id="trab-4"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+				<img class="img-trabajos" src="botones.jpg" alt="Producto">
+				<h3 class="h3-trabajos">Diseño <br>Producto</h3>
+			</div>
+
+			<div class="trabajos trabajo-5" id="trab-5"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+				<img class="img-trabajos" src="images/gmevents/gmevents-button.webp" alt="GM Events">
+				<h3 class="h3-trabajos">Imagen Corporativa <br>GM Events</h3>
+			</div>
+
+			<div class="trabajos trabajo-6" id="trab-6"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+				<img id="img-avon" class="img-trabajos" src="images/avon/banner-avon copia.-v2webp.webp" alt="Folletos AVON">
+				<h3 id="h3-avon" class="h3-trabajos">Folletos <br>AVON</h3>
+			</div>
+
+			<div class="trabajos trabajo-7" id="trab-7"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+				<img class="img-trabajos" src="images/shappira/Sapphira_web.webp" alt="Sapphira Privè">
+				<h3 class="h3-trabajos">Web <br>Sapphira Privè</h3>
+			</div>
+
+			<div class="trabajos trabajo-8" id="trab-8"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+				<img class="img-trabajos" src="images/pandemonio/la_pandemonio.jpeg" alt="La Pandemonio">
+				<h3 class="h3-trabajos">Revista Cultural <br>La Pandemonio</h3>
+			</div>
+
+			<div class="trabajos trabajo-9" id="trab-9"
+				onmouseover="toggleContent(this, true)"
+				onmouseout="toggleContent(this, false)">
+				<img class="img-trabajos" src="images/gatonauta/piesgrandes_v2.webp" alt="Ilustrtaciones">
+				<h3 class="h3-trabajos">Ilustraciones</h3>
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<section class="contact">
+		<div class="container">
+			<div class="vacio"></div>
+			<div class="titulo-h3">
+				<h3>Contacto</h3>
+			</div>
+		</div>
+		<div class="container container-contacto">
+			<div class="main-text">
+				<h1>Sed ut perspiciatis unde omnis iste</h1>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+				</p>
+			</div>
+			<div class="enlaces-contacto">
+				<a href="mailto:josue.gamonal@gmail.com">
+					<div class="icon">
+					<img class="icon-svg" src="images/icons/envelope-fill.svg" alt="Github">
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/in/josue-gamonal-lopez/" target="_blank">
+					<div class="icon">
+					<img class="icon-svg" src="images/icons/linkedin.svg" alt="Linkedin">
+					</div>
+				</a>
+				<a href="https://github.com/josuegamonal" target="_blank">
+					<div class="icon">
+						<img class="icon-svg" src="images/icons/github.svg" alt="Github">
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container" id="navbar">
+			<div class="logo">
+				<p class="nav-contact">Coded with ❤️ <br> by Josué © 2023</p>
+			</div>
+		</footer>
+
+	<script src="index.js"></script>
+</body>
+</html>
