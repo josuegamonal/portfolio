@@ -17,80 +17,21 @@ toggleButton.addEventListener("click", function() {
 
 function toggleContent(element, showText) {
 	var image = element.querySelector('.img-trabajos');
-	var text = element.querySelector('.h3-trabajos');
+	var image2 = element.querySelector('.image-sus');
 
 	if (showText) {
 	  image.style.display = 'none'; // Hide the image
-	  text.style.display = 'block'; // Show the <h3> text
+	  image2.style.display = 'block'; // Show the image2
 	} else {
 	  image.style.display = 'block'; // Show the image
-	  text.style.display = 'none'; // Hide the <h3> text
+	  image2.style.display = 'none'; // Hide the image2
 	}
   }
 
 
-const linkContainer = document.querySelector('.trabajo-1');
-
-// Agregar un event listener para responder al clic
-linkContainer.addEventListener('click', function() {
-  // Redireccionar a la página deseada
-  window.location.href = 'paginas-proyectos/proyecto-RitayPeter.html';
-});
 
 
 
-
-
-
-const linkThermomix = document.querySelector('.trabajo-2');
-
-linkThermomix.addEventListener('click', function() {
-  window.location.href = 'paginas-proyectos/proyecto-thermomix.html';
-});
-
-const linkBeteling = document.querySelector('.trabajo-3');
-
-linkBeteling.addEventListener('click', function() {
-  window.location.href = 'paginas-proyectos/proyecto-beteling.html';
-});
-
-
-const linkproducto = document.querySelector('.trabajo-4');
-
-linkproducto.addEventListener('click', function() {
-  window.location.href = 'paginas-proyectos/proyecto-producto.html';
-});
-
-const linkgmevents = document.querySelector('.trabajo-5');
-
-linkgmevents.addEventListener('click', function() {
-  window.location.href = 'paginas-proyectos/proyecto-gmevents.html';
-});
-
-const linkAvon = document.querySelector('.trabajo-6');
-
-linkAvon.addEventListener('click', function() {
-  window.location.href = 'paginas-proyectos/proyecto-avon.html';
-});
-
-const linkSapphira = document.querySelector('.trabajo-7');
-
-linkSapphira.addEventListener('click', function() {
-  window.location.href = 'paginas-proyectos/proyecto-sapphira.html';
-});
-
-
-const linkPandemonio = document.querySelector('.trabajo-8');
-
-linkPandemonio.addEventListener('click', function() {
-  window.location.href = 'paginas-proyectos/proyecto-lapandemonio.html';
-});
-
-const linkIlustracion = document.querySelector('.trabajo-9');
-
-linkIlustracion.addEventListener('click', function() {
-  window.location.href = 'paginas-proyectos/proyecto-ilustracion.html';
-});
 
 
 

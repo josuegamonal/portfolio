@@ -123,7 +123,6 @@ footer {
 	width: 50px;
 	height: 50px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
@@ -139,7 +138,11 @@ footer {
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
-	object-fit: cover
+	object-fit: fill;
+}
+
+.img-special {
+	object-fit: fill;
 }
 
 .logo {
@@ -154,7 +157,7 @@ footer {
 
 .main-volver {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .more {
@@ -207,16 +210,9 @@ footer {
 	margin-top: 0.3rem;
 }
 
-.trabajos {
-	background-color: #FBE62A;
-}
 
 .trabajos {
-	border: none;
-	margin: 3px;
-	display: grid;
-	justify-content: center;
-	align-items: center;
+	height: 100%;
 }
 
 .trabajos:hover {
@@ -250,7 +246,7 @@ footer {
 
 .trabajo-7{
 	grid-column: 4/5;
-	grid-row: span 4;
+	grid-row: span 2;
 }
 
 .trabajo-8{
@@ -296,6 +292,7 @@ footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 5px;
 }
 
 #projects-pagina{
@@ -316,6 +313,11 @@ footer {
 	vertical-align: middle;
 }
 
+.image-sus {
+	display: none; /* Hide the <h3> by default */
+}
+
+
 #h3-avon {
 	display: none; /* Hide the <h3> by default */
 	color: black;
@@ -335,77 +337,7 @@ footer {
 
 
 
-  @media (max-width: 900px) {
-	* {
-		padding: 0px;
-		margin: 5px;
-	}
-	
-	.container {
-		width: 100%;
-		display: inline-block;
-	}
-
-	.selfie {
-		display: none;
-	}
-
-	.selfie-movil {
-		display: flex;
-		width: 65%;
-	}
-	
-	
-	.enlaces {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 0.5rem;
-	}
-
-	.enlaces-contacto {
-		align-items: last baseline;
-		justify-content: left;
-		gap: 0.5rem;
-	}
-	
-	
-
-	h1 {
-		font-family: 'Permanent Marker', cursive;
-		font-size: 2rem;
-		line-height: 1.7rem;
-	}
-	
-	h3 {
-		font-family: 'Permanent Marker', cursive;
-		font-size: 1rem;
-	}
-	
-	p {
-		font-family: 'Roboto Mono', monospace;
-		font-size: 0.8rem;
-		margin-top: 2rem;
-	}
-
-	.main-volver {
-		display: block;
-	}
-	
-
-	section {
-		margin-top: 2rem;
-	}
-
-  }
-
-
-  @media (max-width: 600px) {
-	* {
-		padding: 0px;
-		margin: 5px;
-	}
-	
+@media (max-width: 900px) {
 	.container {
 		width: 100%;
 		display: inline-block;
@@ -418,34 +350,53 @@ footer {
 	.selfie-movil {
 		display: block;
 	}
-	
-	
+
+
 	.enlaces {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 0.5rem;
+		margin-top: 1rem;
 	}
 
 	.enlaces-contacto {
 		align-items: last baseline;
 		justify-content: left;
 		gap: 0.5rem;
+		margin-top: 1rem;
 	}
-	
-	
+
+	.icon{
+		width: 30px;
+		height: 30px;
+
+	}
+
+	.icon-svg {
+		width: 17px;
+	}
+
+
+	section, footer, nav {
+	margin: 5px;
+	}
+
+	footer {
+		margin-top: 2rem;
+	}
 
 	h1 {
 		font-family: 'Permanent Marker', cursive;
 		font-size: 2rem;
 		line-height: 1.7rem;
 	}
-	
+
 	h3 {
 		font-family: 'Permanent Marker', cursive;
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
-	
+
 	p {
 		font-family: 'Roboto Mono', monospace;
 		font-size: 0.8rem;
@@ -455,19 +406,28 @@ footer {
 	.main-volver {
 		display: block;
 	}
-	
+
 
 	section {
 		margin-top: 2rem;
 	}
-	
+
+	.titulo-h3 {
+		display: block;
+		padding-left: 1rem;
+	}
+
+	.logo {
+		padding: 1rem 1rem;
+		background-color: #FBE62A;
+	}
+
 
 	#projects{
-		margin-top: 3rem;
 		width: 100%;
-		display: block;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		gap: 5px;
+		display: grid;
+		flex-direction: column;
 	}
 
 	#projects-pagina{
@@ -475,7 +435,128 @@ footer {
 		width: 100%;
 		display: block;
 	}
-	
-		
-  }
-  
+
+	.more {
+		margin-top: 1rem;
+	}
+
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+
+}
+
+
+@media (max-width: 600px) {
+	.container {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.selfie {
+		display: none;
+	}
+
+	.selfie-movil {
+		display: block;
+	}
+
+
+	.enlaces {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		margin-top: 1rem;
+	}
+
+	.enlaces-contacto {
+		align-items: last baseline;
+		justify-content: left;
+		gap: 0.5rem;
+		margin-top: 1rem;
+	}
+
+	.icon{
+		width: 30px;
+		height: 30px;
+
+	}
+
+	.icon-svg {
+		width: 17px;
+	}
+
+
+	section, footer, nav {
+	margin: 5px;
+	}
+
+	footer {
+		margin-top: 2rem;
+	}
+
+	h1 {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 2rem;
+		line-height: 1.7rem;
+	}
+
+	h3 {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-family: 'Roboto Mono', monospace;
+		font-size: 0.8rem;
+		margin-top: 2rem;
+	}
+
+	.main-volver {
+		display: block;
+	}
+
+
+	section {
+		margin-top: 2rem;
+	}
+
+	.titulo-h3 {
+		display: block;
+		padding-left: 1rem;
+	}
+
+	.logo {
+		padding: 1rem 1rem;
+		background-color: #FBE62A;
+	}
+
+
+	#projects{
+		width: 100%;
+		gap: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#projects-pagina{
+		margin-top: 3rem;
+		width: 100%;
+		display: block;
+	}
+
+	.more {
+		margin-top: 1rem;
+	}
+
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+}
+}
