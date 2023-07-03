@@ -124,6 +124,7 @@ footer {
 	height: 50px;
 	display: flex;
 	justify-content: center;
+
 }
 
 .icon-svg {
@@ -194,7 +195,6 @@ footer {
 
 .skills {
 	display: inline-flex;
-	margin-top: 2rem;
 }
 
 .skill-container {
@@ -296,10 +296,11 @@ footer {
 }
 
 #projects-pagina{
-	margin-top: 3rem;
+	margin-top: 2rem;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 3px;
 }
 
 #experiencia {
