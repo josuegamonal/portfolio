@@ -427,7 +427,7 @@ footer {
 	#projects{
 		width: 100%;
 		gap: 5px;
-		display: grid;
+		display: flex;
 		flex-direction: column;
 	}
 
