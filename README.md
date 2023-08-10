@@ -1,2 +1,2 @@
 # Personal-Website
-Personal Web
+Web portfolio showcasing a selection of my latest design works.
